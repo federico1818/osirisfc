@@ -17,4 +17,16 @@ h1 {
 .ball {
     width: 64px;
     height: 64px;
+    animation: ball 1.5s infinite linear alternate;
+    position: absolute;
+    left: 0;
+}
+
+@keyframes ball {
+    from {
+        transform: translateX(0vw) rotate(0deg);
+    }
+    to {
+        transform: translateX(calc(100vw - 64px)) rotate(360deg);
+    }
 }
