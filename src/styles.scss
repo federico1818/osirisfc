@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/theme.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 32px;
+}
