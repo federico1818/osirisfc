@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "osirisfc-19831": {
+      "hosting": {
+        "osirisfc": [
+          "osirisfc-19831"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "osirisfc-19831"
+  }
+}
