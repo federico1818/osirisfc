@@ -1,13 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'scss/base/reset.scss';
+@import 'scss/base/sizing.scss';
 @import 'scss/theme.scss';
 
 body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: var(--primary);
-    color: var(--on-primary);
     display: grid;
-    place-items: center;
 }
 
 h1 {
