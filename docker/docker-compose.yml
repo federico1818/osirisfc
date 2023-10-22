@@ -16,7 +16,7 @@ services:
                 dockerfile: Dockerfile
             volumes:
                 - ./../:/srv
-            command: tail -f /dev/null
+            command: npm run start
             networks:
                 - default
             ports:
