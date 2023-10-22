@@ -1,0 +1,17 @@
+nav {
+    padding: 8px;
+}
+
+li {
+    background-color: var(--surface-color);
+    color: var(--on-surface-color);
+    height: 72px;
+    width: 80px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--surface-border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
