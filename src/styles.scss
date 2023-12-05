@@ -1,30 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'scss/base/reset.scss';
-@import 'scss/base/sizing.scss';
-@import 'scss/theme.scss';
-
-body {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    display: grid;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-.ball {
-    width: 64px;
-    height: 64px;
-    animation: ball 1.5s infinite linear alternate;
-    position: absolute;
-    left: 0;
-}
-
-@keyframes ball {
-    from {
-        transform: translateX(0vw) rotate(0deg);
-    }
-    to {
-        transform: translateX(calc(100vw - 64px)) rotate(360deg);
-    }
-}
+@import 'scss/base/reset';
+@import 'scss/base/sizing';
+@import 'scss/base/font';
+@import 'scss/theme';
+@import 'scss/components/body.scss';
