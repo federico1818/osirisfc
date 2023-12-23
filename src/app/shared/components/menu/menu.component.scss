@@ -21,6 +21,7 @@ nav {
     display: grid;
     place-items: center;
     border-radius: var(--border-radius-md);
+    cursor: pointer;
 }
 
 .link.active {
