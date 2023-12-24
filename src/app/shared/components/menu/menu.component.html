@@ -1,11 +1,11 @@
 <nav>
-    <a class="link" routerLink="/" routerLinkActive="active">
+    <a class="link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <app-icon-tshirt class="icon"></app-icon-tshirt>
     </a>
-    <a class="link" routerLink="player" routerLinkActive="active">
+    <a class="link" routerLink="players" routerLinkActive="active">
         <app-icon-tshirt class="icon"></app-icon-tshirt>
     </a>
-    <a class="link" routerLink="/" routerLinkActive="active">
+    <a class="link" routerLink="/tournaments" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <app-icon-tshirt class="icon"></app-icon-tshirt>
     </a>
 </nav>

@@ -5,14 +5,15 @@ import { provideAuth,getAuth } from '@angular/fire/auth'
 import { provideFirestore,getFirestore } from '@angular/fire/firestore'
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app'
 
-import { IconsModule } from './icons/icons.module'
-import { SharedModule } from './shared/shared.module'
-
+import { IconsModule } from 'src/app/icons/icons.module'
+import { SharedModule } from 'src/app/shared/shared.module'
 import { PlayersModule } from 'src/app/players/players.module'
+import { TournamentsModule } from 'src/app/tournaments/tournaments.module'
+
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { environment } from '../environments/environment'
-import { HomeComponent } from './pages/home/home.component'
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
     declarations: [
@@ -26,6 +27,7 @@ import { HomeComponent } from './pages/home/home.component'
         IconsModule,
         SharedModule,
         PlayersModule,
+        TournamentsModule,
         provideFirebaseApp(() => initializeApp(environment.firebase)),
         provideAuth(() => getAuth()),
         provideFirestore(() => getFirestore())
