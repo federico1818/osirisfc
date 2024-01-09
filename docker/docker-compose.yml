@@ -2,14 +2,12 @@ version: "3.8"
 
 services:
     node:
-        image: node-osirisfc
-        container_name: node-osirisfc
+        image: osirisfc-node
+        container_name: osirisfc-node
         restart: always
         working_dir: /srv
         build:
             args:
-                name: ${GIT_USER_NAME}
-                email: ${GIT_USER_EMAIL}
                 ngversion: 15.2.9
             context: ./dockerfiles/node-18-18
             dockerfile: Dockerfile
@@ -21,4 +19,20 @@ services:
             - default
         ports:
             - 4200:4200
+    firebase:
+        image: osirisfc-firebase
+        container_name: osirisfc-firebase
+        restart: always
+        working_dir: /srv
+        build:
+            args:
+                firebaseversion: 13.0.2
+            context: ./dockerfiles/firebase-13-0-2
+            dockerfile: Dockerfile
+        volumes:
+            - ./../:/srv
+        command: tail -f /dev/null
+        networks:
+            - default
+        ports:
             - 9005:9005

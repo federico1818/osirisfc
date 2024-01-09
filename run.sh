@@ -11,7 +11,7 @@ case $1 in
     ;;
 
     in)
-        docker exec -it node-osirisfc sh
+        docker exec -it osirisfc-node sh
     ;;
 
     *)
